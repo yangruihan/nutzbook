@@ -9,7 +9,7 @@ import org.nutz.dao.entity.annotation.Name;
 import org.nutz.dao.entity.annotation.Table;
 
 @Table("t_user")
-public class User {
+public class User extends BasePojo {
 
 	@Id
 	private int id;
@@ -23,12 +23,6 @@ public class User {
 	
 	@Column
 	private String salt;
-	
-	@Column("ct")
-	private Date createTime;
-	
-	@Column("ut")
-	private Date updateTime;
 
 	/*---------- setter & getter ----------*/
 	public int getId() {
@@ -61,21 +55,5 @@ public class User {
 
 	public void setSalt(String salt) {
 		this.salt = salt;
-	}
-
-	public Date getCreateTime() {
-		return createTime;
-	}
-
-	public void setCreateTime(Date createTime) {
-		this.createTime = createTime;
-	}
-
-	public Date getUpdateTime() {
-		return updateTime;
-	}
-
-	public void setUpdateTime(Date updateTime) {
-		this.updateTime = updateTime;
 	}
 }

@@ -28,11 +28,8 @@ import com.yangruihan.nutzbook.bean.User;
 @Ok("json:{locked:'password|salt', ignoreNull:true}") // 避免密码和盐值发送到浏览器
 @Fail("http:500") // 抛出异常的话，就走500页面
 @Filters(@By(type=CheckSession.class, args = {"me", "/"})) // Session检查，如果当前Session没有带me这个attribute，就跳转到/页面
-public class UserModule {
+public class UserModule extends BaseModule {
 
-	@Inject
-	protected Dao dao; // 注入同名的一个 Ioc 对象
-	
 	@At("/")
 	@Ok("jsp:jsp.user.list") // 添加页面中转方法，真实路径使 /WEB-INF/jsp/user/list.jsp
 	public void index() {
