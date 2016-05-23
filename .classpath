@@ -17,7 +17,8 @@
 	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/druid-1.0.19.jar"/>
 	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/mysql-connector-java-5.1.39-bin.jar"/>
 	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/nutz-1.r.56.r3-javadoc.jar"/>
-	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/nutz-1.r.56.r3-sources.jar"/>
-	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/nutz-1.r.56.r3.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/nutz-1.r.56.r3.jar" sourcepath="sources/nutz-1.r.56.r3-sources.jar"/>
+	<classpathentry kind="lib" path="sources/nutz-1.r.56.r3-sources.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/log4j-1.2.17.jar"/>
 	<classpathentry kind="output" path="WebContent/WEB-INF/classes"/>
 </classpath>
