@@ -1,4 +1,10 @@
 var ioc = {
+		conf : {
+			type : "org.nutz.ioc.impl.PropertiesProxy",
+			fields : {
+				paths : ["custom/db.properties"]
+			}
+		},
 		dataSource : {
 			type : "com.alibaba.druid.pool.DruidDataSource",
 			events : {
@@ -6,13 +12,15 @@ var ioc = {
 				depose : "close"
 			},
 			fields : {
-				driverClassName : 'com.mysql.jdbc.Driver',
-				url : 'jdbc:mysql:///nutz_test?useUnicode=true&amp;characterEncoding=UTF-8',
-				username : 'root',
-				password : '123456',
+				driverClassName : {java:"$conf.get('db.driverClassName')"},
+				url : {java:"$conf.get('db.url')"},
+				username : {java:"$conf.get('db.username')"},
+				password : {java:"$conf.get('db.password')"},
 				testWhileIdle : true,
-				validationQuery : "select 1",
-				maxActive : 100
+				validationQuery : {java:"$conf.get('db.validationQuery')"},
+				maxActive : {java:"$conf.get('db.maxActive')"},
+				filters : "mergeStat",
+				connectionProperties : "druid.stat.slowSqlMillis=2000"
 			}
 		},
 		dao : {

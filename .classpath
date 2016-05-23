@@ -20,5 +20,22 @@
 	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/nutz-1.r.56.r3.jar" sourcepath="sources/nutz-1.r.56.r3-sources.jar"/>
 	<classpathentry kind="lib" path="sources/nutz-1.r.56.r3-sources.jar"/>
 	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/log4j-1.2.17.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/c3p0-0.9.1.1.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/commons-beanutils-1.9.2.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/commons-email-1.3.3.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/commons-logging-1.2.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/javax.mail-1.5.2.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/nutz-integration-quartz-1.b.53.r3.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/nutz-integration-shiro-1.b.53.r2.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/quartz-2.2.3.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/quartz-jobs-2.2.3.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/shiro-all-1.1.0.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/simplecaptcha-1.2.2.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/slf4j-api-1.7.7.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/slf4j-log4j12-1.7.7.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/taglibs-standard-compat-1.2.5.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/taglibs-standard-impl-1.2.5.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/taglibs-standard-jstlel-1.2.5.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/taglibs-standard-spec-1.2.5.jar"/>
 	<classpathentry kind="output" path="WebContent/WEB-INF/classes"/>
 </classpath>
